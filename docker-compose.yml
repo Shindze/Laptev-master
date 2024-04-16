@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+
+  movies_service:
+    restart: on-failure
+    container_name: movies_service
+    build: movies_service/
+    ports:
+      - "8000:80"
+
+  favourite_service:
+    restart: on-failure
+    container_name: favourite_service
+    build: favourite_service/
+    ports:
+      - "8001:80"

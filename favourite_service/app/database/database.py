@@ -12,7 +12,7 @@ Base = declarative_base()
 
 
 class MovieDB(Base):
-    __tablename__ = 'favourite_selimdzhanov'
+    __tablename__ = 'favourite_radynov'
 
     id = Column(Integer, primary_key=True)
     movie_name = Column(String, nullable=False)
